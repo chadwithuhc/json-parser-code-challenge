@@ -4,7 +4,8 @@
   "description": "",
   "main": "parser.js",
   "scripts": {
-    "test": "mocha --watch"
+    "test": "mocha",
+    "test:watch": "mocha --watch"
   },
   "keywords": [],
   "author": "",

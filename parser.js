@@ -74,10 +74,10 @@ class JSONParser {
 
   parseKeyValue(str) {
     const [key, value] = str.split(':')
-    const obj = {}
-    obj[this.parseString(key)] = this.autoParse(value)
-
-    return obj
+    
+    return {
+      [this.parseString(key)]: this.autoParse(value)
+    }
   }
 
 }
